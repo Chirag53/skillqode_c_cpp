@@ -1,18 +1,17 @@
+//1
 #include<iostream>
 using namespace std;
 
-class student 
+class Student 
 {
     int admo;
     string sname;
     float eng,maths,sci,total;
     public:
-    student();
-    void takeData(int,float,float,float,float);
-    void cTotal();
-    void showdata();
-};
-void student ::takeData(int,float,float,float,float)
+    
+    
+
+void takeData()
 {
     cout<<"Admission num :";
     cin>>admo;
@@ -25,18 +24,21 @@ void student ::takeData(int,float,float,float,float)
     cout<<"\n sci marks :";
     cin>>sci;
 }
-void student ::cTotal()
+void cTotal()
 {
-    Total=eng+maths+sci;
+    total=eng+maths+sci;
     cout<<"\n Admission num"<<"\t"<<"name"<<"\t"<<"eng"<<"\t"<<"maths"<<"'\t"<<"sci"<<"\t"<<"total";
     cout<<"\n-------------------------------------------------------------------------------";
 }
-void student ::showdata()
+void showdata()
 {
-    cout<<"\n add no"<<"\t"<<"name"<<"\t"<<"eng"<<"\t"<<"maths"<<"'\t"<<"sci"<<"\t"<<"total";
-    cout<<"\n-------------------------------------------------------------------------------";
+    cout<<"\n"<<admo<<"\t\t"<<sname<<"\t"<<eng<<"\t"<<maths<<"\t"<<sci<<"\t"<<total;
 }
+};
 int main()
 {
-
+    Student chirag;
+    chirag.takeData();
+    chirag.cTotal();
+    chirag.showdata();
 }

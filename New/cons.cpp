@@ -2,6 +2,7 @@
 using namespace std;
 class Bank
 {
+    static 
     int accBalance,withdrawal,Deposite,total;
     public:
     void showAccountBalance()
