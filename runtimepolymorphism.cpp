@@ -23,5 +23,5 @@ int main()
     p= &b;
     p->display();
     p= &d;
-    p->display();
-}
+    p->display();   
+}   
